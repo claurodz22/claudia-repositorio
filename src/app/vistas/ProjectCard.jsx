@@ -15,9 +15,14 @@ export default function ProjectCard({ id, title, description, imageUrl }) {
       <CardContent className="p-6">
         <h3 className="text-xl font-bold mb-2 text-primary">{title}</h3>
         <p className="text-muted-foreground mb-4">{description}</p>
-        <Button variant="outline" size="sm" className="border-secondary text-secondary hover:bg-secondary/10" asChild>
-          <Link href={`/proyectos/${id}`}>Ver detalles</Link>
-        </Button>
+        <Button 
+  variant="outline" 
+  size="sm" 
+  className="border-secondary text-white hover:bg-secondary/10" 
+  asChild
+>
+  <Link href={`/proyectos/${id}`}>Ver detalles</Link>
+</Button>
       </CardContent>
     </Card>
   )
