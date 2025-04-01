@@ -10,7 +10,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
         >
-          Tu Nombre
+          Claudia Rodriguez
         </Link>
         <div className="flex items-center gap-6">
           <ul className="hidden md:flex gap-6">
@@ -29,13 +29,9 @@ export default function Navbar() {
                 Sobre Mí
               </Link>
             </li>
-            <li>
-              <Link href="/contacto" className="hover:text-primary transition-colors">
-                Contacto
-              </Link>
-            </li>
+            
           </ul>
-          <ModeToggle />
+          
           <Button className="bg-secondary hover:bg-secondary/90 hidden md:flex">
             <Link href="/contacto">Contáctame</Link>
           </Button>

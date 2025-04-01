@@ -6,9 +6,13 @@ import { Github, Linkedin, Instagram, Mail, Send, MessageSquare } from "lucide-r
 export default function ContactoPage() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-        Contáctame
-      </h1>
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold tracking-tight sm:text-7xl bg-gradient-to-r from-purple-600 via-blue-500 to-white bg-clip-text text-transparent animate-gradient mb-6">
+          Contáctame
+        </h1>
+        <div className="h-1 w-32 bg-gradient-to-r from-purple-600 via-blue-500 to-white mx-auto rounded-full"></div>
+      </div>
+
       <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12">
         Estoy disponible para proyectos freelance, oportunidades laborales o simplemente para charlar sobre tecnología.
         No dudes en contactarme por cualquiera de estos medios.

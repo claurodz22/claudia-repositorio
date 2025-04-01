@@ -24,7 +24,8 @@ export default function ContactSection() {
                   <Link
                     href="https://linkedin.com/in/claurodz23"
                     target="_blank"
-                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-primary transition-colors z-10 relative"
                   >
                     <Linkedin className="h-4 w-4" />
                     LinkedIn
@@ -34,7 +35,8 @@ export default function ContactSection() {
                   <Link
                     href="https://instagram.com/claurodz23"
                     target="_blank"
-                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-primary transition-colors z-10 relative"
                   >
                     <Instagram className="h-4 w-4" />
                     Instagram
@@ -44,7 +46,8 @@ export default function ContactSection() {
                   <Link
                     href="https://t.me/claurodz"
                     target="_blank"
-                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-primary transition-colors z-10 relative"
                   >
                     <Send className="h-4 w-4" />
                     Telegram
@@ -65,7 +68,7 @@ export default function ContactSection() {
                 <li>
                   <Link
                     href="mailto:claudiaelena091@gmail.com"
-                    className="flex items-center gap-2 hover:text-secondary transition-colors"
+                    className="flex items-center gap-2 hover:text-secondary transition-colors z-10 relative"
                   >
                     <Mail className="h-4 w-4" />
                     Gmail
@@ -74,7 +77,7 @@ export default function ContactSection() {
                 <li>
                   <Link
                     href="mailto:claurodz20@outlook.com"
-                    className="flex items-center gap-2 hover:text-secondary transition-colors"
+                    className="flex items-center gap-2 hover:text-secondary transition-colors z-10 relative"
                   >
                     <Mail className="h-4 w-4" />
                     Outlook
@@ -94,7 +97,8 @@ export default function ContactSection() {
               <Link
                 href="https://github.com/claurodz22"
                 target="_blank"
-                className="flex items-center gap-2 hover:text-primary transition-colors mb-3"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-primary transition-colors mb-3 z-10 relative"
               >
                 <Github className="h-4 w-4" />
                 @claurodz22
@@ -102,10 +106,10 @@ export default function ContactSection() {
               <Button
                 variant="outline"
                 size="sm"
-                className="w-full border-primary text-primary hover:bg-primary/10"
+                className="w-full border-primary text-primary hover:bg-primary/10 relative z-10"
                 asChild
               >
-                <Link href="https://github.com/claurodz22" target="_blank">
+                <Link href="https://github.com/claurodz22" target="_blank" rel="noopener noreferrer">
                   Ver perfil
                 </Link>
               </Button>
@@ -114,7 +118,7 @@ export default function ContactSection() {
         </div>
 
         <div className="text-center">
-          <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+          <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 relative z-10">
             <Link href="/contacto">Más formas de contacto</Link>
           </Button>
         </div>

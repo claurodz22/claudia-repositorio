@@ -11,32 +11,38 @@ import { SkillBadge } from "@/components/ui/skill-badge"
 const featuredProjects = [
   {
     id: 1,
-    title: "Proyecto 1",
-    description: "Aplicación web desarrollada con React y Node.js",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 1",
+    title: "Aplicación Web para el área de Postgrado de Ciencias Administrativas en la UDO",
+    description: "Aplicación web desarrollada con React y Next.js",
+    objective: "Proyecto para la materia de Desarrollo de Software Avanzado del 8vo Semestre",
+    imageUrl: "/adminpostgraduate.png",
+    gitUrl: " https://github.com/claurodz22/admin-postgraduate ",
   },
   {
     id: 2,
-    title: "Proyecto 2",
-    description: "Sitio web responsivo con HTML, CSS y JavaScript",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 2",
+    title: "API para la Aplicación Web de Postgrado de Ciencias Administrativas en la UDO",
+    description: "Desarrollada con Django y Django REST Framework",
+    objective: "API para interactuar con la BDD perteneciente a la App Web",
+    imageUrl: "/API.png",
+    gitUrl: " https://github.com/claurodz22/admin-postgraduate-api ",
   },
   {
     id: 3,
-    title: "Proyecto 3",
-    description: "Aplicación móvil desarrollada con React Native",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 3",
+    title: "Juego Web: Adivina el número",
+    description: "Juego Web diseñado con Vue.js",
+    objective: "Adquirir conocimientos básicos para el uso de Vue.js",
+    imageUrl: "/countergame.png",
+    gitUrl: " https://github.com/claurodz22/claudia-juego-vue- ",
   },
 ]
 
 // Lista de habilidades para mostrar
 const skills = [
   { name: "React", color: "bg-blue-500" },
-  { name: "Node.js", color: "bg-green-500" },
+  { name: "Next.js", color: "bg-green-500" },
   { name: "JavaScript", color: "bg-yellow-500" },
   { name: "HTML/CSS", color: "bg-orange-500" },
   { name: "Python", color: "bg-blue-700" },
-  { name: "Raspberry Pi", color: "bg-red-500" },
+  { name: "Raspberry Pi Pico", color: "bg-red-500" },
 ]
 
 export default function Home() {
@@ -105,7 +111,9 @@ export default function Home() {
                 id={project.id}
                 title={project.title}
                 description={project.description}
+                objective={project.objective}
                 imageUrl={project.imageUrl}
+                gitUrl = {project.gitUrl}
               />
             ))}
           </div>
@@ -141,7 +149,7 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <ContactSection />
+      <ContactSection/>
     </div>
   )
 }

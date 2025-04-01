@@ -4,50 +4,67 @@ import ProjectCard from "@/app/vistas/ProjectCard"
 const allProjects = [
   {
     id: 1,
-    title: "Proyecto 1",
-    description: "Aplicación web desarrollada con React y Node.js",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 1",
+    title: "Aplicación Web para el área de Postgrado de Ciencias Administrativas en la UDO",
+    description: "Aplicación web desarrollada con React, Next.js y Tailwind",
+    objective: "Proyecto para la materia de Desarrollo de Software Avanzado del 8vo Semestre",
+    imageUrl: "/adminpostgraduate.png",
+    gitUrl: " https://github.com/claurodz22/admin-postgraduate ",
   },
   {
     id: 2,
-    title: "Proyecto 2",
-    description: "Sitio web responsivo con HTML, CSS y JavaScript",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 2",
+    title: "API para la Aplicación Web de Postgrado de Ciencias Administrativas en la UDO",
+    description: "Desarrollada con Django y Django REST Framework",
+    objective: "API para interactuar con la BDD perteneciente a la App Web",
+    imageUrl: "/API.png",
+    gitUrl: " https://github.com/claurodz22/admin-postgraduate-api ",
   },
   {
     id: 3,
-    title: "Proyecto 3",
-    description: "Aplicación móvil desarrollada con React Native",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 3",
+    title: "Juego Web: Adivina el número",
+    description: "Juego Web diseñado con Vue.js",
+    objective: "Adquirir conocimientos básicos para el uso de Vue.js",
+    imageUrl: "/countergame.png",
+    gitUrl: " https://github.com/claurodz22/claudia-juego-vue- ",
   },
   {
     id: 4,
-    title: "Proyecto 4",
-    description: "Dashboard administrativo con Next.js y Tailwind",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 4",
+    title: "Desarrollo de un dispositivo IoT",
+    description: "Sistema de notificaciones automaticas (vía Gmail) para detectar intrusos usando la Raspberry Pi Pico W",
+    imageUrl: "/iot.jpg",
+    objective: "Proyecto final para la materia de Proyectos Digitales Avanzados",
+    gitUrl: "https://github.com/claurodz22/IoTGmailAlarmas", 
   },
+
   {
     id: 5,
-    title: "Proyecto 5",
-    description: "E-commerce desarrollado con MERN stack",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 5",
+    title: "Portafolio Personal",
+    description: "Página Web para elaborar Portafolio",
+    imageUrl: "/portfolio.png",
+    objective: "Potenciales clientes puedan ver mi stack de herramientas",
+    gitUrl: "https://github.com/claurodz22/claudia-repositorio",
   },
+  
   {
     id: 6,
-    title: "Proyecto 6",
-    description: "Blog personal con Gatsby y GraphQL",
-    imageUrl: "/placeholder.svg?height=200&width=400&text=Proyecto 6",
+    title: "Proyectos diseñados con la Raspberry Pi Pico y Pico W",
+    objective: "Adquirir conocimientos en el uso de la Raspberry Pi Pico y Pico W",
+    description: "Proyectos para la materia de Proyectos Digitales Avanzados",
+    imageUrl: "/pico2.png",
+    gitUrl: "https://github.com/claurodz22/proyectosRaspberryPiPico"
   },
 ]
 
 export default function ProyectosPage() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-        Mis Proyectos
-      </h1>
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold tracking-tight sm:text-7xl bg-gradient-to-r from-purple-600 via-blue-500 to-white bg-clip-text text-transparent animate-gradient mb-6">
+          Mis Proyectos
+        </h1>
+        <div className="h-1 w-32 bg-gradient-to-r from-purple-600 via-blue-500 to-white mx-auto rounded-full"></div>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {allProjects.map((project) => (
           <ProjectCard
             key={project.id}
@@ -55,6 +72,8 @@ export default function ProyectosPage() {
             title={project.title}
             description={project.description}
             imageUrl={project.imageUrl}
+            gitUrl={project.gitUrl}
+            objective={project.objective}
           />
         ))}
       </div>
