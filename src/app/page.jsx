@@ -43,6 +43,7 @@ const skills = [
   { name: "HTML/CSS", color: "bg-orange-500" },
   { name: "Python", color: "bg-blue-700" },
   { name: "Raspberry Pi Pico", color: "bg-red-500" },
+  { name: "Nuxt", color: "bg-purple-800" },
 ]
 
 export default function Home() {

@@ -32,7 +32,7 @@ const allProjects = [
     description: "Sistema de notificaciones automaticas (vía Gmail) para detectar intrusos usando la Raspberry Pi Pico W",
     imageUrl: "/iot.jpg",
     objective: "Proyecto final para la materia de Proyectos Digitales Avanzados",
-    gitUrl: "https://github.com/claurodz22/IoTGmailAlarmas", 
+    gitUrl: "https://github.com/claurodz22/IoTGmailAlarmas",
   },
 
   {
@@ -43,7 +43,7 @@ const allProjects = [
     objective: "Potenciales clientes puedan ver mi stack de herramientas",
     gitUrl: "https://github.com/claurodz22/claudia-repositorio",
   },
-  
+
   {
     id: 6,
     title: "Proyectos diseñados con la Raspberry Pi Pico y Pico W",
@@ -51,6 +51,15 @@ const allProjects = [
     description: "Proyectos para la materia de Proyectos Digitales Avanzados",
     imageUrl: "/pico2.png",
     gitUrl: "https://github.com/claurodz22/proyectosRaspberryPiPico"
+  },
+
+  {
+    id: 7,
+    title: "Desarrollo de Aplicación Web: Calculadora de Productos Químicos",
+    objective: "Desarrollo de una calculadora con el objetivo de hacer planes de productos, etc",
+    description: "Trabajo Freelance - Empresa de Estados Unidos",
+    imageUrl: "/chandlerco.png",
+    gitUrl: "Proyecto no público"
   },
 ]
 
